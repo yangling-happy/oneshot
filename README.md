@@ -10,6 +10,23 @@ Run the following command:
 npx create-turbo@latest
 ```
 
+## 快速启动
+
+### 单独启动各服务
+
+在根目录打开三个不同终端窗口，分别执行以下命令：
+
+```sh
+# 启动后端服务
+pnpm start:server
+
+# 启动桌面端应用
+pnpm start:desktop
+
+# 启动移动端应用（可手机扫码访问）
+pnpm start:mobile
+```
+
 ## What's inside?
 
 This Turborepo includes the following packages/apps:
