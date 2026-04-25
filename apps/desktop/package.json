@@ -13,7 +13,10 @@
   },
   "dependencies": {
     "@hocuspocus/provider": "^4.0.0",
+    "@radix-ui/react-primitive": "^2.1.4",
     "@tldraw/tldraw": "^4.5.10",
+    "@types/pako": "^2.0.4",
+    "pako": "^2.1.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "yjs": "^13.6.30"

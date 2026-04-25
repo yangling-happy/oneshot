@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { NestFactory } from '@nestjs/core';
 import { Logger } from '@nestjs/common';
 import { Server } from '@hocuspocus/server';
@@ -25,9 +26,9 @@ async function bootstrap() {
       const docName = data.documentName;
       return realtimeService.getOrCreateDoc(docName);
     },
+    onConnect: realtimeService.onConnect.bind(realtimeService),
+    onDisconnect: realtimeService.onDisconnect.bind(realtimeService),
   });
-
-  realtimeService.setHocuspocusInstance(hocuspocus);
 
   await hocuspocus.listen();
   await app.listen(apiPort);

@@ -9,9 +9,11 @@
     "check-types": "turbo run check-types",
     "start:server": "pnpm --filter server start:dev",
     "start:desktop": "pnpm --filter desktop electron",
-    "start:mobile": "pnpm --filter mobile start"
+    "start:mobile": "pnpm --filter mobile start",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
     "prettier": "^3.7.4",
     "turbo": "^2.9.6",
     "typescript": "5.9.2"
